@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación e historia</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../assets/imagenes/logo.png" type="image/x-icon">
+</head>
+
+<body onscroll="navChange()">
+    <nav>
+        <a href="../index.html">
+            <svg width="100" height="80">
+                <rect x="10" y="5" width="80" height="50" class="logo-animacion1" fill="var(--colorAzulTransparente2)"
+                    stroke="var(--colorAzul)" stroke-width="1">
+                </rect>
+                <rect x="15" y="10" width="70" height="40" class="logo-animacion2" fill="var(--colorSombraNegra)"
+                    stroke="var(--colorAzul)" stroke-width="1"></rect>
+                <rect x="40" y="56" width="20" height="10" class="logo-animacion1" fill="var(--colorAzulTransparente2)"
+                    stroke="var(--colorAzul)" stroke-width="1">
+                </rect>
+
+                <polygon points="15 67,85 67 ,94 80,4 80" fill="var(--colorAzulTransparente2)" stroke="var(--colorAzul)"
+                    stroke-width="2" class="logo-animacion1"></polygon>
+                <polygon points="19 70,80 70  ,84 77,14 77" fill="var(--colorSombraNegra)" class="logo-animacion2"
+                    stroke="var(--colorAzul)">
+                </polygon>
+
+                <line x1="20" y1="18" x2="65" y2="18" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+                <line x1="20" y1="23" x2="65" y2="23" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+                <line x1="20" y1="28" x2="45" y2="28" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+
+                <line x1="20" y1="33" x2="80" y2="33" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+                <line x1="20" y1="38" x2="80" y2="38" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+                <line x1="20" y1="43" x2="60" y2="43" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+            </svg>
+        </a>
+        <ul class="menu">
+            <li><a class="item-menu" href="../section/historia.html">HISTORIA</a></li>
+            <li><a class="item-menu" href="../section/juguemos.html">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+    <header class="header-3">
+        <h1 class="header-azul">JUGUEMOS UN POCO</h1>
+    </header>
+    <main>
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        <section class="juego">
+            <div class="cajas">
+                <div class="caja zona-destino">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="caja zona-destino2">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="caja zona-destino3">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+            </div>
+            <div class="cajaimagenes">
+                <img ondragstart="arrastreImg(event)" id="imagen1" src="../assets/imagenes/rompe2.png"
+                    alt="imagen rompecabezas" />
+                <img ondragstart="arrastreImg(event)" id="imagen2" src="../assets/imagenes/Rompe1.png"
+                    alt="imagen rompecabezas" />
+                <img ondragstart="arrastreImg(event)" id="imagen3" src="../assets/imagenes/Rompe3.png"
+                    alt="imagen rompecabezas" />
+            </div>
+        </section>
+        <button onclick="reinicio()" class="reinicio botonVideo">REINICIAR</button>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="../assets/imagenes/logo.png" alt="logo">
+            <span>Programación e historia</span>
+        </div>
+        <div>
+            <span>Sitio con fines educativos</span>
+        </div>
+    </footer>
+    <script src="../js/scriptJuego.js"></script>
+</body>
+
+</html>

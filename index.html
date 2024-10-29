@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación e historia</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/imagenes/logo.png" type="image/x-icon">
+</head>
+
+<body onscroll="navChange()">
+    <nav>
+        <a href="index.html">
+            <svg width="100" height="80">
+                <rect x="10" y="5" width="80" height="50" class="logo-animacion1" fill="var(--colorAzulTransparente2)"
+                    stroke="var(--colorAzul)" stroke-width="1">
+                </rect>
+                <rect x="15" y="10" width="70" height="40" class="logo-animacion2" fill="var(--colorSombraNegra)"
+                    stroke="var(--colorAzul)" stroke-width="1"></rect>
+                <rect x="40" y="56" width="20" height="10" class="logo-animacion1" fill="var(--colorAzulTransparente2)"
+                    stroke="var(--colorAzul)" stroke-width="1">
+                </rect>
+
+                <polygon points="15 67,85 67 ,94 80,4 80" fill="var(--colorAzulTransparente2)" stroke="var(--colorAzul)"
+                    stroke-width="2" class="logo-animacion1"></polygon>
+                <polygon points="19 70,80 70  ,84 77,14 77" fill="var(--colorSombraNegra)" class="logo-animacion2"
+                    stroke="var(--colorAzul)">
+                </polygon>
+
+                <line x1="20" y1="18" x2="65" y2="18" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+                <line x1="20" y1="23" x2="65" y2="23" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+                <line x1="20" y1="28" x2="45" y2="28" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+
+                <line x1="20" y1="33" x2="80" y2="33" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+                <line x1="20" y1="38" x2="80" y2="38" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+                <line x1="20" y1="43" x2="60" y2="43" stroke="transparent" stroke-width="3" class="logoPantalla"></line>
+            </svg>
+        </a>
+        <ul class="menu">
+            <li><a class="item-menu" href="./section/historia.html">HISTORIA</a></li>
+            <li><a class="item-menu" href="./section/juguemos.html">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>PROGRAMACIÓN E HISTORIA</h1>
+    </header>
+    <main>
+        <h2>CONTENIDO</h2>
+        <section class="section-cards">
+            <div class="card">
+                <img src="./assets/imagenes/historia-programacion.jpg" alt="imagen producto">
+                <div class="card-desc">
+                    <p>Conozcamos un poco sobre la historia de la programacion</p>
+                    <a class="card-button" href="./section/historia.html">Ir a Historia</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/imagenes/img2.jpg" alt="imagen producto">
+                <div class="card-desc">
+                    <p>Vamos a jugar un poco utilizando metodos aprendidos en clase</p>
+                    <a class="card-button" href="./section/juguemos.html">Ir a juego</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="./assets/imagenes/logo.png" alt="logo">
+            <span>Programación e historia</span>
+        </div>
+        <div>
+            <span>Sitio con fines educativos</span>
+        </div>
+    </footer>
+    <script src="./js/script1.js"></script>
+</body>
+
+</html>

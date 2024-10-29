@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --colorBlanco: #FFFFFF;
+    --colorAzul: #2F3645;
+    --colorAzulTransparente1: #2f3645b3;
+    --colorAzulTransparente2: #767a81de;
+    --colorSombraGris: #808080;
+    --colorSombraNegra: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+/* *************** NAVEGACION *************** */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    padding: 10px 55px 10px 55px;
+    transition: background-color .5s;
+}
+
+.fondoNav {
+    background-color: var(--colorBlanco);
+}
+
+.fondoNav>ul>li>a {
+    color: var(--colorDark);
+    text-shadow: 1px 1px var(--colorBlanco), 2px 3px var(--colorSombraGris);
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.item-menu {
+    color: var(--colorBlanco);
+    text-shadow: 1px 1px var(--colorSombraGris), 2px 3px var(--colorSombraNegra);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.menu>li:hover {
+    transform: translate(3px, 2px);
+}
+
+.menu>li:hover>.item-menu {
+    text-shadow: 0.5px 0.5px var(--colorDark);
+}
+
+/*----- logo ------*/
+.logo-animacion1 {
+    animation: parte1 ease-in 1s;
+    animation-iteration-count: 1;
+}
+
+.logo-animacion2 {
+    animation: parte2 ease-in 1s;
+    animation-iteration-count: 1;
+}
+
+line.logoPantalla {
+    animation-name: mosstrarPantalla;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes parte1 {
+    from {
+        transform: translate(0, -10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes parte2 {
+    from {
+        transform: translate(0, -10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes mosstrarPantalla {
+    from {
+        stroke: transparent;
+    }
+
+    to {
+        stroke: green;
+    }
+
+}
+
+/* *************** HEADER *************** */
+header {
+    background-image: url(../assets/imagenes/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: var(--colorBlanco);
+    text-shadow: 2px 2px var(--colorSombraGris), 6px 6px var(--colorSombraNegra);
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.header-2 {
+    background-image: url(../assets/imagenes/historia-programacion.jpg);
+    height: 70vh;
+}
+
+.header-3 {
+    background-image: url(../assets/imagenes/img2.jpg);
+    height: 70vh;
+}
+
+.header-azul {
+    background: rgba(47, 54, 69, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* *************** MAIN *************** */
+
+main {
+    padding: 80px 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--colorAzul);
+    text-shadow: 1px 1px var(--colorBlanco), 2px 2px var(--colorSombraGris);
+}
+
+.section-cards {
+    margin: 70px 0px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 500px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-desc {
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-button {
+    width: 80%;
+    background-color: var(--colorAzul);
+    padding: 10px;
+    color: var(--colorBlanco);
+}
+
+/* *************** HISTORIA *************** */
+
+.card-historia {
+    display: flex;
+    padding: 75px 45px;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-historia img {
+    width: 50%;
+}
+
+.card-historia-desc {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+/* *************** VIDEO *************** */
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+    gap: 60px;
+}
+
+.container {
+    width: 60%;
+    padding: 5px;
+    background-color: var(--colorAzul);
+}
+
+.videoHistoria {
+    width: 100%;
+}
+
+.controlesVideo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorAzul);
+    padding: 15px;
+}
+
+.controlesVideo p {
+    color: var(--colorBlanco);
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+}
+
+.botonVideo {
+    padding: 10px 32px;
+    box-shadow: 2px 2px var(--colorSombraGris);
+}
+
+.botonVideo:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px;
+}
+
+/* ----------     JUEGO     ------------*/
+.juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajas {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+.caja {
+    width: 275px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--colorSombraNegra);
+    background-color: var(--colorSombraGris);
+}
+
+.caja img {
+    width: 275px;
+    height: 400px;
+}
+
+.caja:hover {
+    background-color: var(--colorSombraNegra);
+
+}
+
+.caja:hover>p {
+    color: var(--colorBlanco);
+}
+
+.cajaimagenes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
+
+#imagen1,
+#imagen2,
+#imagen3 {
+    width: 275px;
+    height: 400px;
+}
+
+.reinicio {
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 0px;
+    background-color: var(--colorAzul);
+    color: var(--colorBlanco);
+}
+
+/* *************** FOOTER *************** */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--colorAzul);
+    color: var(--colorBlanco);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 120px;
+}
+
+.footer-logo img {
+    width: 25%;
+}
